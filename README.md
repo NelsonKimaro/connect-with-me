@@ -7,6 +7,7 @@ A simple and lightweight HTML landing page that allows people to easily follow m
 - Quick follow buttons for Instagram, LinkedIn, and X (Twitter)
 - Mobile-friendly layout
 - Fast and lightweight
+- **Google Analytics** integration to track visits and user interactions
 
 ## 🚀 How to Use
 1. **Scan the QR code** (linking to the hosted page).
@@ -15,5 +16,9 @@ A simple and lightweight HTML landing page that allows people to easily follow m
 ## 🌍 Hosting
 This page is hosted using **GitHub Pages**.
 
+## 📊 Analytics
+Google Analytics is integrated to track page visits, clicks, and user interactions, providing valuable insights into how users are engaging with the page.
+
 ---
+
 🔗 *Want to connect? Scan the QR and follow me!*  
