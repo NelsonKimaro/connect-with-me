@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -95,6 +95,194 @@
             margin-right: 12px;
             font-size: 24px;
             transition: transform 0.3s ease;
+        }
+
+        .linkedin {
+            background: #0077B5;
+        }
+
+        .instagram {
+            background: #E4405F;
+        }
+
+        .twitter {
+            background: #1DA1F2;
+        }
+
+        /* Button hover effect */
+        .social-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:hover i {
+            transform: scale(1.1);
+        }
+
+        /* Make sure buttons and image are responsive on smaller screens */
+        @media (max-width: 600px) {
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .social-btn {
+                font-size: 16px;
+                padding: 10px;
+                margin: 8px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/NelsonKimaro/connect-with-me/main/IMG_ID.JPG" alt="Profile Picture" class="profile-img">
+        <h2>Nelson Kimaro</h2>
+        <p>Follow me on my social media platforms!</p>
+        
+        <a href="https://www.linkedin.com/in/nelson-kimaro-835a12288/" target="_blank" class="social-btn linkedin">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+        </a>
+        <a href="https://www.instagram.com/nellytitus2?igsh=MWtiZjVtanpiMXV5dA==" target="_blank" class="social-btn instagram">
+            <i class="fab fa-instagram"></i> Follow on Instagram
+        </a>
+        <a href="https://x.com/nelson44802296?s=21&t=O0mrpuNqtl1ZfnkNl78YMw" target="_blank" class="social-btn twitter">
+            <i class="fab fa-twitter"></i> Follow on X (Twitter)
+        </a>
+    </div>
+
+</body>
+</html>
+ -->
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Me</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V71PG074CB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V71PG074CB');
+    </script>
+
+    <!-- Font Awesome for Social Media Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f06, #ff9b9b);
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            margin: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        /* Slide-in effect for the container on mobile */
+        @keyframes slideIn {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* Smooth zoom effect for profile image on mobile */
+        .profile-img:hover,
+        .profile-img:focus {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            color: white;
+            transition: 0.3s;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;  /* Set the width of the button to 100% to avoid exceeding container */
+            max-width: 100%; /* Ensure it doesn't exceed the container's max-width */
+            text-align: center; /* Center text */
+            box-sizing: border-box; /* Ensure padding doesn't break the width */
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.5s forwards;
+            animation-delay: 0.3s; /* Delay for each button */
+        }
+
+        /* Slide-up effect for buttons on mobile */
+        @keyframes slideUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Delay for each button to make it appear one after the other */
+        .social-btn:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+        .social-btn:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        .social-btn:nth-child(3) {
+            animation-delay: 0.8s;
         }
 
         .linkedin {
