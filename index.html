@@ -77,7 +77,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
             padding: 12px;
             margin: 10px 0;
             text-decoration: none;
@@ -86,9 +85,10 @@
             color: white;
             transition: 0.3s;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 100%; /* Ensure buttons do not overflow */
-            word-wrap: break-word; /* Prevent overflow */
+            width: 100%;  /* Set the width of the button to 100% to avoid exceeding container */
+            max-width: 100%; /* Ensure it doesn't exceed the container's max-width */
             text-align: center; /* Center text */
+            box-sizing: border-box; /* Ensure padding doesn't break the width */
         }
 
         .social-btn i {
@@ -135,6 +135,8 @@
                 font-size: 16px;
                 padding: 10px;
                 margin: 8px 0;
+                width: 100%;
+                text-align: center;
             }
         }
 
